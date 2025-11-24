@@ -3,6 +3,7 @@ import { DataGrid, type GridColDef } from '@mui/x-data-grid';
 import { Box, Typography, Paper } from '@mui/material';
 import type { Project } from '../types';
 import { getProjects } from '../services/mockData';
+import styles from './ListView.module.scss';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -28,7 +29,7 @@ const ListView = () => {
       <Typography variant="h4" gutterBottom>
         Project List
       </Typography>
-      <Paper sx={{ height: 400, width: '100%' }}>
+      <Paper className={styles.gridContainer}>
         <DataGrid
           rows={projects}
           columns={columns}

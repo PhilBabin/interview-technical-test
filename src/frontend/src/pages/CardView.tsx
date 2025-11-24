@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Box, Typography, Card, CardContent, CardActions, Button, Grid } from '@mui/material';
 import type { Project } from '../types';
 import { getProjects } from '../services/mockData';
+import styles from './CardView.module.scss';
 
 const CardView = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -17,19 +18,19 @@ const CardView = () => {
       </Typography>
       <Grid container spacing={3}>
         {projects.map((project) => (
-          <Grid key={project.id}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={project.id}>
             <Card>
               <CardContent>
                 <Typography variant="h5" component="div">
                   {project.name}
                 </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                <Typography className={styles.status} color="text.secondary">
                   {project.status}
                 </Typography>
                 <Typography variant="body2">
                   {project.description}
                 </Typography>
-                <Typography variant="caption" display="block" sx={{ mt: 1 }}>
+                <Typography variant="caption" display="block" className={styles.dueDate}>
                   Due: {project.dueDate}
                 </Typography>
               </CardContent>

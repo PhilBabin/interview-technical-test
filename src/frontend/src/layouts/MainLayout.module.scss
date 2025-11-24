@@ -1,0 +1,51 @@
+$drawer-width: 240px;
+
+.root {
+  display: flex;
+}
+
+.appBar {
+  z-index: 1201 !important; /* theme.zIndex.drawer + 1 */
+}
+
+.title {
+  width: $drawer-width;
+  flex-shrink: 0;
+}
+
+.breadcrumbsContainer {
+  margin-left: 0;
+}
+
+.breadcrumbs {
+  color: inherit;
+}
+
+.breadcrumbLink {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.breadcrumbCurrent {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.drawer {
+  width: $drawer-width;
+  flex-shrink: 0;
+
+  :global(.MuiDrawer-paper) {
+    width: $drawer-width;
+    box-sizing: border-box;
+  }
+}
+
+.drawerContent {
+  overflow: auto;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 24px;
+}
