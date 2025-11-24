@@ -9,7 +9,7 @@ $drawer-width: 240px;
 }
 
 .title {
-  width: $drawer-width;
+  width: $drawer-width - 20px;
   flex-shrink: 0;
 }
 

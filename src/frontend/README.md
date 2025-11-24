@@ -13,7 +13,7 @@ yarn install
 Start the dev server, and the app will be available at [http://localhost:3000](http://localhost:3000).
 
 ```bash
-yarn run dev
+yarn run start
 ```
 
 Build the app for production:
