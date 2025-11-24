@@ -1,0 +1,16 @@
+import type { Project } from '../types';
+
+const API_URL = 'http://localhost:5008/api/projects';
+
+export const getProjects = async (): Promise<Project[]> => {
+  try {
+    const response = await fetch(API_URL);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Failed to fetch projects:', error);
+    return [];
+  }
+};

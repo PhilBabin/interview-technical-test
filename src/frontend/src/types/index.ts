@@ -1,7 +1,9 @@
 export interface Project {
-  id: string;
+  id: number;
   name: string;
-  status: 'Active' | 'Completed' | 'Pending';
+  status: string;
   description: string;
   dueDate: string;
+  completedDate?: string;
+  buildingId?: number;
 }

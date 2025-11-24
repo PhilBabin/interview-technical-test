@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { DataGrid, type GridColDef } from '@mui/x-data-grid';
 import { Box, Typography, Paper } from '@mui/material';
 import type { Project } from '../types';
-import { getProjects } from '../services/mockData';
+import { getProjects } from '../services/projectService';
 import styles from './ListView.module.scss';
 
 const columns: GridColDef[] = [

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Box, Typography, Card, CardContent, CardActions, Button, Grid } from '@mui/material';
 import type { Project } from '../types';
-import { getProjects } from '../services/mockData';
+import { getProjects } from '../services/projectService';
 import styles from './CardView.module.scss';
 
 const CardView = () => {
