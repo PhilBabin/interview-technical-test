@@ -40,7 +40,6 @@ const ListView = () => {
             },
           }}
           pageSizeOptions={[5, 10]}
-          checkboxSelection
         />
       </Paper>
     </Box>
