@@ -54,7 +54,7 @@ dotnet restore
 dotnet run
 ```
 
-The backend API should now be running (check the console output for the port, typically `http://localhost:5000` or `https://localhost:5001`).
+The backend API should now be running (check the console output for the port, should be `http://localhost:5008`).
 
 ### 3. Start the Frontend Application
 Open a new terminal, navigate to the frontend directory, install dependencies, and start the development server:
