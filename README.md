@@ -40,6 +40,10 @@ Follow these steps to get the application running locally.
 The database is configured via Docker Compose. Run the following command from the root of the repository to start the MySQL container:
 
 ```bash
+docker compose up -d
+```
+or
+```bash
 docker-compose up -d
 ```
 
