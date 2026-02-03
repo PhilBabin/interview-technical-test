@@ -47,7 +47,7 @@ or
 docker-compose up -d
 ```
 
-This will start a MySQL instance on port `3306` with the database `interview_db`.
+This will start a MySQL instance on port `3333` with the database `interview_db`.
 
 ### 2. Start the Backend API
 Navigate to the backend directory and start the .NET application:
@@ -69,7 +69,7 @@ yarn install
 yarn start
 ```
 
-The command `yarn start` runs `rsbuild dev --open`, which will start the frontend and automatically open it in your default browser (usually at `http://localhost:3000`).
+The command `yarn start` runs `rsbuild dev --open`, which will start the frontend and automatically open it in your default browser (usually at `http://localhost:3101`).
 
 
 ### Database architecture
