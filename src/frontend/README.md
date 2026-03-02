@@ -5,7 +5,7 @@
 Install the dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Get started
@@ -13,19 +13,19 @@ yarn install
 Start the dev server, and the app will be available at [http://localhost:3000](http://localhost:3000).
 
 ```bash
-yarn run start
+npm run start
 ```
 
 Build the app for production:
 
 ```bash
-yarn run build
+npm run build
 ```
 
 Preview the production build locally:
 
 ```bash
-yarn run preview
+npm run preview
 ```
 
 ## Learn more

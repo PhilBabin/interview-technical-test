@@ -65,11 +65,11 @@ Open a new terminal, navigate to the frontend directory, install dependencies, a
 
 ```bash
 cd src/frontend
-yarn install
-yarn start
+npm install
+npm run start
 ```
 
-The command `yarn start` runs `rsbuild dev --open`, which will start the frontend and automatically open it in your default browser (usually at `http://localhost:3101`).
+The command `npm run start` runs `rsbuild dev --open`, which will start the frontend and automatically open it in your default browser (usually at `http://localhost:3101`).
 
 
 ### Database architecture
