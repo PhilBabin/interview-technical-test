@@ -1,15 +1,15 @@
 import { Box, Drawer, AppBar, Toolbar, Typography, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Breadcrumbs, Link as MuiLink, CssBaseline } from '@mui/material';
-import { TableChart, ViewModule } from '@mui/icons-material';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import styles from './MainLayout.module.scss';
+import { TableChartIcon, ViewModuleIcon } from '../components/icons';
 
 export const MainLayout = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
   const menuItems = [
-    { text: 'List View', icon: <TableChart />, path: '/list' },
-    { text: 'Card View', icon: <ViewModule />, path: '/cards' },
+    { text: 'List View', icon: <TableChartIcon />, path: '/list' },
+    { text: 'Card View', icon: <ViewModuleIcon />, path: '/cards' },
   ];
 
   const pathnames = location.pathname.split('/').filter((x) => x);

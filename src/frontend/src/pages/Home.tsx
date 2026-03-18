@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Box, Typography, Button, Paper, CircularProgress } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { TableChart, ViewModule } from '@mui/icons-material';
+import { TableChartIcon, ViewModuleIcon } from '../components/icons';
 import styles from './Home.module.scss';
 
 interface WeatherData {
@@ -74,7 +74,7 @@ const Home = () => {
         <Button
           variant="contained"
           size="large"
-          startIcon={<TableChart />}
+          startIcon={<TableChartIcon />}
           onClick={() => navigate('/list')}
           className={styles.navButton}
         >
@@ -83,7 +83,7 @@ const Home = () => {
         <Button
           variant="contained"
           size="large"
-          startIcon={<ViewModule />}
+          startIcon={<ViewModuleIcon />}
           onClick={() => navigate('/cards')}
           className={styles.navButton}
         >
